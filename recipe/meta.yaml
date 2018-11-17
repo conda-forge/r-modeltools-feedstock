@@ -14,9 +14,9 @@ source:
   sha256: 256a088fc80b0d9182f984f9bd3d6207fb7c1e743f72e2ecb480e6c1d4ac34e9
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,8 +43,7 @@ about:
     find the implemented ideas interesting we would be very interested in a discussion
     of this proposal. Contributions are more than welcome!
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
