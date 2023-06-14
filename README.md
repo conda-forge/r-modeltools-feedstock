@@ -1,11 +1,11 @@
-About r-modeltools
-==================
+About r-modeltools-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-modeltools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=modeltools
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-modeltools-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of tools to deal with statistical models.  The functionality is experimental and the user interface is likely to change in the future. The documentation is rather terse, but packages `coin' and `party' have some working examples. However, if you find the implemented ideas interesting we would be very interested in a discussion of this proposal. Contributions are more than welcome!
 
