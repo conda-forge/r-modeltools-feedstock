@@ -1,4 +1,4 @@
-{% set version = "0.2-23" %}
+{% set version = "0.2-24" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/modeltools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/modeltools/modeltools_{{ version }}.tar.gz
-  sha256: 6b3e8d5af1a039db5c178498dbf354ed1c5627a8cea9229726644053443210ef
+  sha256: f8b285897c535526f2c37b70bf66f182e12dd02a7ec8261f52d28caca8ce1eaf
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -34,9 +34,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=modeltools
   license: GPL-2.0-only
-  summary: A collection of tools to deal with statistical models.  The functionality is experimental and the user interface is likely to change in the future. The
-    documentation is rather terse, but packages `coin' and `party' have some working examples. However, if you find the implemented ideas interesting we would be
-    very interested in a discussion of this proposal. Contributions are more than welcome!
+  summary: A collection of tools to deal with statistical models.  The functionality is experimental and the user interface is likely to change in the future. The documentation is rather terse, but packages `coin' and `party' have some working examples. However, if you find the implemented ideas interesting we would be very
+    interested in a discussion of this proposal. Contributions are more than welcome!
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
